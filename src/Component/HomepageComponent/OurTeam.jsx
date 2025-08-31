@@ -27,7 +27,7 @@ const OurTeam = () => {
       id: 2,
       image: Ranojit,
       name: "Ranojit Kumar Mohonto",
-      designation: "CEO - Barman&Code",
+      designation: "CEO - Ranocode",
     },
     {
       id: 3,
