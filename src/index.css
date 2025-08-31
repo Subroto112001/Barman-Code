@@ -1,0 +1,285 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  vertical-align: middle;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+span,
+a {
+  display: inline-block;
+}
+
+:root {
+  /* =========gray color */
+  --color-gray-50: #fafafa;
+  --color-gray-100: #f7fafc;
+  --color-gray-200: #edf2f7;
+  --color-gray-300: #e2e8f0;
+  --color-gray-400: #cbd5e0;
+  --color-gray-500: #a0aec0;
+  --color-gray-600: #718096;
+  --color-gray-700: #4a5568;
+  --color-gray-800: #2d3748;
+  --color-gray-900: #1a202c;
+  /* ========brand color */
+  --color-secondary-bg: #f76680;
+  --color-dark-bg: #16192c;
+  --color-info-bg: #68dbf2;
+  --color-danger-bg: #f16063;
+  --color-warning-bg: #f7936f;
+  --color-success-bg: #66cb9f;
+  --color-tertiary-bg: #ff92ae;
+  --color-Primary-bg: #57007b;
+  /* ==========gradient color */
+  --color-gradient-Primary-bg: linear-gradient(180deg, #f76680 0%, #57007b 100%);
+  --color-gradient-Secondery-bg: linear-gradient(
+    90deg,
+    #f1f1f5 0%,
+    #e4ecf7 100%
+  );
+  --color-gradient-tertiary-bg: linear-gradient(
+    90deg,
+    #ff92ae 0%,
+    #ff3d9a 100%
+  );
+  --color-gradient-success-bg: linear-gradient(90deg, #67e9f1 0%, #24e795 100%);
+  --color-gradient-warning-bg: linear-gradient(90deg, #ffef5e 0%, #f7936f 100%);
+  --color-gradient-danger-bg: linear-gradient(90deg, #ffc656 0%, #f16063 100%);
+  --color-gradient-info-bg: linear-gradient(90deg, #68dbf2 0%, #509cf5 100%);
+  --color-gradient-dark-bg: linear-gradient(90deg, #29272e 0%, #27272e 100%);
+
+   
+  /*================== shade */
+  --color--primary-lite-bg: #e7daed;
+  --color--secondary-lite-bg: #ffe7eb;
+  --color--tertiary-lite-bg: #ffadba;
+  --color--success-lite-bg: #e0ffef;
+  --color--warning-lite-bg: #ffefe8;
+  --color--danger-lite-bg: #f68e87;
+  --color--info-lite-bg: #e3fcff;
+  --color--dark-lite-bg: #505780;
+  --color--light-lite-bg: #f9f9ff;
+  --color--pink-lite-bg: #ffe9e9;
+  /* ==============base */
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-pink: #8e5efa;
+
+  --color-lite-green: #e7feec;
+}
+.fbg-gradient-primary {
+  background: var(--color-gradient-Primary-bg);
+}
+@theme {
+  /* ========= Gray color ========= */
+  --color-gray-50: var(--color-gray-50);
+  --color-gray-100: var(--color-gray-100);
+  --color-gray-200: var(--color-gray-200);
+  --color-gray-300: var(--color-gray-300);
+  --color-gray-400: var(--color-gray-400);
+  --color-gray-500: var(--color-gray-500);
+  --color-gray-600: var(--color-gray-600);
+  --color-gray-700: var(--color-gray-700);
+  --color-gray-800: var(--color-gray-800);
+  --color-gray-900: var(--color-gray-900);
+
+  /* ========= Brand Colors ========= */
+  --color-secondary: var(--color-secondary-bg);
+  --color-dark: var(--color-dark-bg);
+  --color-info: var(--color-info-bg);
+  --color-danger: var(--color-danger-bg);
+  --color-warning: var(--color-warning-bg);
+  --color-success: var(--color-success-bg);
+  --color-tertiary: var(--color-tertiary-bg);
+  --color-primary: var(--color-Primary-bg);
+
+  /* ========= Gradient Colors ========= */
+  --color-gradient-primary: var(--color-gradient-Primary-bg);
+  --color-gradient-secondary: var(--color-gradient-Secondery-bg);
+  --color-gradient-tertiary: var(--color-gradient-tertiary-bg);
+  --color-gradient-success: var(--color-gradient-success-bg);
+  --color-gradient-warning: var(--color-gradient-warning-bg);
+  --color-gradient-danger: var(--color-gradient-danger-bg);
+  --color-gradient-info: var(--color-gradient-info-bg);
+  --color-gradient-dark: var(--color-gradient-dark-bg);
+
+  /* ========= Shade Colors ========= */
+  --color-primary-lite: var(--color--primary-lite-bg);
+  --color-secondary-lite: var(--color--secondary-lite-bg);
+  --color-tertiary-lite: var(--color--tertiary-lite-bg);
+  --color-success-lite: var(--color--success-lite-bg);
+  --color-warning-lite: var(--color--warning-lite-bg);
+  --color-danger-lite: var(--color--danger-lite-bg);
+  --color-info-lite: var(--color--info-lite-bg);
+  --color-dark-lite: var(--color--dark-lite-bg);
+  --color-light-lite: var(--color--light-lite-bg);
+  --color-pink-lite: var(--color--pink-lite-bg);
+
+  /* ========= Base ========= */
+  --color-black: var(--color-black);
+  --color-white: var(--color-white);
+  --color-pink: var(--color-pink);
+  --color-lite-green: var(--color-lite-green);
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.menu-items {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+.Thumbnail {
+  font-family: "Inter", sans-serif;
+  font-family: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.Nav-text {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  line-height: 24px;
+}
+.btn-sm {
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 10px;
+}
+.btn-base {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+}
+.btn-lg {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+}
+.para-1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18ox;
+  line-height: 30px;
+}
+.default {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 162px;
+}
+.default-lg {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.headings-h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: 0;
+}
+.Headings-h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 136%;
+}
+.Headings-h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 136%;
+}
+.Headings-h5 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.Headings-h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+}
+.Headings-sm {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+.line-h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 71px;
+}
+.line-h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 55px;
+}
+.Headings-h5-900 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+}
+.Dilplay-h2-bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+}
+.Dilplay-h3-bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+}
+.Dilplay-h4-bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+}
+.Dilplay-h1-bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 53px;
+  line-height: 71px;
+}
+.Footer-sm {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 10px;
+}
+.Footer-links {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
