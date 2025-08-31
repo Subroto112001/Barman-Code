@@ -49,7 +49,7 @@ const Service = () => {
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
-            spaceBetween={200}
+            spaceBetween={150}
                       slidesPerView={3}
                          
             navigation={{
@@ -61,7 +61,7 @@ const Service = () => {
             <div className=" ">
               {serviceitem.map((item) => (
                 <SwiperSlide>
-                  <div className="w-[333px] h-[280px]  justify-center rounded-md border-2 border-pink py-[25px] px-[20px] flex flex-col gap-[15px]">
+                  <div className="w-[333px] h-[280px] cursor-pointer  justify-center rounded-md border-2 border-pink py-[25px] px-[20px] flex flex-col gap-[15px]">
                     <div className="w-[50px] h-[50px] flex justify-center items-center rounded-full border border-pink  text-blue-400">
                       <span className="text-2xl ">
                        {item.icon}

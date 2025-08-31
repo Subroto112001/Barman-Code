@@ -87,16 +87,16 @@ a {
 }
 @theme {
   /* ========= Gray color ========= */
-  --color-gray-50: var(--color-gray-50);
-  --color-gray-100: var(--color-gray-100);
-  --color-gray-200: var(--color-gray-200);
-  --color-gray-300: var(--color-gray-300);
-  --color-gray-400: var(--color-gray-400);
-  --color-gray-500: var(--color-gray-500);
-  --color-gray-600: var(--color-gray-600);
-  --color-gray-700: var(--color-gray-700);
-  --color-gray-800: var(--color-gray-800);
-  --color-gray-900: var(--color-gray-900);
+  --color-text-gray-50: var(--color-gray-50);
+  --color-text-gray-100: var(--color-gray-100);
+  --color-text-gray-200: var(--color-gray-200);
+  --color-text-gray-300: var(--color-gray-300);
+  --color-text-gray-400: var(--color-gray-400);
+  --color-text-gray-500: var(--color-gray-500);
+  --color-text-gray-600: var(--color-gray-600);
+  --color-text-gray-700: var(--color-gray-700);
+  --color-text-gray-800: var(--color-gray-800);
+  --color-text-gray-900: var(--color-gray-900);
 
   /* ========= Brand Colors ========= */
   --color-secondary: var(--color-secondary-bg);
@@ -119,16 +119,16 @@ a {
   --color-gradient-dark: var(--color-gradient-dark-bg);
 
   /* ========= Shade Colors ========= */
-  --color-primary-lite: var(--color--primary-lite-bg);
-  --color-secondary-lite: var(--color--secondary-lite-bg);
-  --color-tertiary-lite: var(--color--tertiary-lite-bg);
-  --color-success-lite: var(--color--success-lite-bg);
-  --color-warning-lite: var(--color--warning-lite-bg);
-  --color-danger-lite: var(--color--danger-lite-bg);
-  --color-info-lite: var(--color--info-lite-bg);
-  --color-dark-lite: var(--color--dark-lite-bg);
-  --color-light-lite: var(--color--light-lite-bg);
-  --color-pink-lite: var(--color--pink-lite-bg);
+  --color-primary-lite: var(--color-primary-lite-bg);
+  --color-secondary-lite: var(--color-secondary-lite-bg);
+  --color-tertiary-lite: var(--color-tertiary-lite-bg);
+  --color-success-lite: var(--color-success-lite-bg);
+  --color-warning-lite: var(--color-warning-lite-bg);
+  --color-danger-lite: var(--color-danger-lite-bg);
+  --color-info-lite: var(--color-info-lite-bg);
+  --color-dark-lite: var(--color-dark-lite-bg);
+  --color-light-lite: var(--color-light-lite-bg);
+  --color-pink-lite: var(--color-pink-lite-bg);
 
   /* ========= Base ========= */
   --color-black: var(--color-black);
@@ -169,8 +169,8 @@ a {
 
 .container {
   margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 104px;
+  padding-right: 104px;
 }
 
 .menu-items {
@@ -323,4 +323,8 @@ a {
   overflow: visible !important;
 }
 
+.caseborderleft{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
 /* custom */
