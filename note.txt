@@ -1,0 +1,14 @@
+ <div className="w-[333px] h-[280px]  justify-center rounded-md border-2 border-pink py-[25px] px-[20px] flex flex-col gap-[15px]">
+                    <div className="w-[50px] h-[50px] flex justify-center items-center rounded-full border border-pink  text-blue-400">
+                      <span className="text-2xl ">
+                       {item.icon}
+                      </span>
+                    </div>
+
+                    <h3 className="Headings-h4 gradient-second-text">
+                     {item.heading}
+                    </h3>
+                    <p className="default text-gray-700">
+                    {item.para}
+                    </p>
+                  </div>

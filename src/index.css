@@ -137,6 +137,36 @@ a {
   --color-lite-green: var(--color-lite-green);
 }
 
+
+
+.gradient-text {
+    background: linear-gradient(to right, #ff0000, #0000ff); /* Example: red to blue */
+    -webkit-background-clip: text; /* For WebKit browsers */
+    background-clip: text;
+    color: transparent;
+    display: inline-block; /* Adjust as needed */
+}
+.gradient-second-text {
+    background: linear-gradient(to right, #f76680, #57007b); /* Example: red to blue */
+    -webkit-background-clip: text; /* For WebKit browsers */
+    background-clip: text;
+    color: transparent;
+    display: inline-block; /* Adjust as needed */
+}
+  .gradient-background {
+  background-image: linear-gradient(to right, #f76680, #57007b);
+}
+
+.gradient-backgroundtwo {
+  background-image: linear-gradient(to right, #f76680, #57007b);
+}
+
+
+
+
+
+
+
 .container {
   margin: 0 auto;
   padding-left: 40px;
@@ -189,7 +219,7 @@ a {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 162px;
+  
 }
 .default-lg {
   font-family: "Inter", sans-serif;
@@ -233,13 +263,14 @@ a {
   font-size: 14px;
   line-height: 24px;
 }
-.line-h1 {
+
+.lite-h1 {
   font-family: "Inter", sans-serif;
   font-weight: 300;
   font-size: 45px;
   line-height: 71px;
 }
-.line-h2 {
+.lite-h2 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 35px;
@@ -283,3 +314,13 @@ a {
   font-weight: 400;
   font-size: 16px;
 }
+
+
+/* custom */
+
+/* Add in your global CSS or Tailwind classes */
+.swiper-slide {
+  overflow: visible !important;
+}
+
+/* custom */

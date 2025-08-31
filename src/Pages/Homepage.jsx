@@ -1,8 +1,14 @@
 import React from "react";
-import Header from "../ParentComponent/Header/Header";
+import Banner from "../Component/HomepageComponent/Banner";
+import Service from "../Component/HomepageComponent/Service";
 
 const Homepage = () => {
-  return <div className="container">Main</div>;
+  return (
+    <>
+      <Banner />
+      <Service/>
+    </>
+  );
 };
 
 export default Homepage;
