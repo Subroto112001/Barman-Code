@@ -8,18 +8,21 @@ const Casestudies = () => {
     {
       id: 1,
       image: card1,
+      class: "bg-[#F1F2FF]",
       header: "Website Design for SCFC Canada",
       para: "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
     },
     {
       id: 2,
       image: card2,
+      class: "bg-[#F0FFF7]",
       header: "Website Design for SCFC Canada",
       para: "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
     },
     {
       id: 3,
       image: card3,
+      class: "bg-[#FFF4F4]",
       header: "Website Design for SCFC Canada",
       para: "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
     },
@@ -29,12 +32,15 @@ const Casestudies = () => {
       <div className="container py-[89px]">
         <div>
           <div className="flex flex-col items-center justify-center">
+            <div className="w-[89px] h-[4px] rounded gradient-backgroundtwo mb-[20px] "></div>
             <h3 className="lite-h2">Our recent </h3>
             <h3 className="headings-h2"> Case studies </h3>
           </div>
           <div className="flex flex-col gap-[40px]">
             {caseholde.map((item) => (
-              <div className="flex flex-row justify-between items-center mt-[89px]!  rounded-lg bg-[#F1F2FF] ">
+              <div
+                className={`flex flex-row justify-between items-center mt-[89px]!  rounded-lg  ${item.class} `}
+              >
                 <div className="w-[601px] h-[416px]">
                   <img src={item.image} alt={card1} className="w-full h-full" />
                 </div>
@@ -44,7 +50,7 @@ const Casestudies = () => {
                       {item.header}
                     </h3>
                     <p className="default text-text-gray-700 w-[529px]">
-                     {item.para}
+                      {item.para}
                     </p>
                   </div>
                 </div>

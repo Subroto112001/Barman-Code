@@ -44,14 +44,19 @@ const Service = () => {
   ];
   return (
     <div className="container">
-      <div className="flex justify-center items-center py-[70px]">
+      <div className="flex flex-col gap-[70px] justify-center items-center py-[70px]">
+        <div className="flex flex-col items-center justify-center">
+          <div className="w-[89px] h-[4px] rounded gradient-backgroundtwo mb-[20px] "></div>
+          
+          <h3 className="headings-h2"> Our Service </h3>
+        </div>
+
         <div className="w-full flex flex-row relative">
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={150}
-                      slidesPerView={3}
-                         
+            slidesPerView={3}
             navigation={{
               nextEl: ".custom-next",
               prevEl: ".custom-prev",
@@ -63,17 +68,13 @@ const Service = () => {
                 <SwiperSlide>
                   <div className="w-[333px] h-[280px] cursor-pointer  justify-center rounded-md border-2 border-pink py-[25px] px-[20px] flex flex-col gap-[15px]">
                     <div className="w-[50px] h-[50px] flex justify-center items-center rounded-full border border-pink  text-blue-400">
-                      <span className="text-2xl ">
-                       {item.icon}
-                      </span>
+                      <span className="text-2xl ">{item.icon}</span>
                     </div>
 
                     <h3 className="Headings-h4 gradient-second-text">
-                     {item.heading}
+                      {item.heading}
                     </h3>
-                    <p className="default text-gray-700">
-                    {item.para}
-                    </p>
+                    <p className="default text-gray-700">{item.para}</p>
                   </div>
                 </SwiperSlide>
               ))}

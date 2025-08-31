@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 * {
-  margin: 0;
+
   box-sizing: border-box;
 }
 img {
@@ -158,7 +158,7 @@ a {
 }
 
 .gradient-backgroundtwo {
-  background-image: linear-gradient(to right, #f76680, #57007b);
+  background-image: linear-gradient(to left, #f76680, #57007b);
 }
 
 
