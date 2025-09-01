@@ -146,6 +146,13 @@ a {
     color: transparent;
     display: inline-block; /* Adjust as needed */
 }
+.gradient-textTWO {
+    background: linear-gradient(to left, #ff0000, #0000ff); /* Example: red to blue */
+    -webkit-background-clip: text; /* For WebKit browsers */
+    background-clip: text;
+    color: transparent;
+    display: inline-block; /* Adjust as needed */
+}
 .gradient-second-text {
     background: linear-gradient(to right, #f76680, #57007b); /* Example: red to blue */
     -webkit-background-clip: text; /* For WebKit browsers */
@@ -319,9 +326,7 @@ a {
 /* custom */
 
 /* Add in your global CSS or Tailwind classes */
-.swiper-slide {
-  overflow: visible !important;
-}
+
 
 .caseborderleft{
   border-top-left-radius: 10px;

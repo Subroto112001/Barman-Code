@@ -4,6 +4,7 @@ import Service from "../Component/HomepageComponent/Service";
 import Casestudies from "../Component/HomepageComponent/Casestudies";
 import OurTeam from "../Component/HomepageComponent/OurTeam";
 import Approach from "../Component/HomepageComponent/Approach";
+import TechStack from "../Component/HomepageComponent/TechStack";
 
 const Homepage = () => {
   return (
@@ -12,7 +13,8 @@ const Homepage = () => {
       <Service />
       <Casestudies />
       <OurTeam />
-      <Approach/>
+      <Approach />
+      <TechStack/>
     </>
   );
 };

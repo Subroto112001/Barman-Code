@@ -1,0 +1,339 @@
+/* Service Component Animations CSS - Import this file separately */
+
+/* Background animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes expandWidth {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 89px;
+    opacity: 1;
+  }
+}
+
+@keyframes iconBounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  40% {
+    transform: translateY(-8px) rotate(10deg);
+  }
+  60% {
+    transform: translateY(-4px) rotate(-5deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.6), 0 0 30px rgba(59, 130, 246, 0.4);
+  }
+}
+
+@keyframes cardSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px) rotateX(10deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg);
+  }
+}
+
+/* Animation classes */
+.animate-service-container {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-service-main {
+  animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+.animate-service-header-section {
+  animation: fadeInDown 0.6s ease-out 0.3s both;
+}
+
+.animate-service-gradient-bar {
+  animation: expandWidth 0.8s ease-out 0.4s both;
+}
+
+.animate-service-title {
+  animation: slideInLeft 0.6s ease-out 0.6s both;
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-service-title::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  animation: shimmer 2s infinite 1s;
+}
+
+.animate-service-swiper-container {
+  animation: fadeInUp 0.6s ease-out 0.8s both;
+}
+
+.animate-service-swiper {
+  animation: scaleIn 0.6s ease-out 1s both;
+}
+
+.animate-service-card {
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.animate-service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(236, 72, 153, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.animate-service-card:hover::before {
+  left: 100%;
+}
+
+.animate-service-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(236, 72, 153, 0.2);
+  border-color: #ec4899;
+  background: linear-gradient(135deg, #ffffff 0%, #fdf2f8 100%);
+}
+
+.animate-service-icon-container {
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.animate-service-icon-container:hover {
+  animation: glow 1s ease-in-out infinite;
+  transform: scale(1.15) rotate(10deg);
+  border-color: #3b82f6;
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+}
+
+.animate-service-icon {
+  transition: all 0.3s ease;
+}
+
+.animate-service-card:hover .animate-service-icon {
+  animation: iconBounce 0.8s ease-in-out;
+  color: #1e40af;
+}
+
+.animate-service-card-content {
+  transition: all 0.3s ease;
+}
+
+.animate-service-card:hover .animate-service-card-content {
+  transform: translateX(8px);
+}
+
+.animate-service-card-title {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-service-card:hover .animate-service-card-title {
+  background: linear-gradient(45deg, #ec4899, #be185d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 1.5s ease-in-out;
+}
+
+.animate-service-card-description {
+  transition: all 0.3s ease;
+}
+
+.animate-service-card:hover .animate-service-card-description {
+  color: #374151;
+  transform: translateY(-3px);
+}
+
+.animate-service-nav-button {
+  animation: slideInLeft 0.5s ease-out 1.2s both;
+  transition: all 0.3s ease;
+}
+
+.animate-service-nav-button.next {
+  animation: slideInRight 0.5s ease-out 1.2s both;
+}
+
+.animate-service-nav-button:hover {
+  animation: pulse 0.6s ease-in-out infinite;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px) scale(1.1);
+}
+
+.animate-service-nav-button:active {
+  transform: scale(0.95);
+}
+
+/* Swiper slide animations */
+.swiper-slide {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.swiper-slide-active,
+.swiper-slide-next,
+.swiper-slide-prev {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.swiper-slide-active .animate-service-card {
+  animation: float 3s ease-in-out infinite 2s;
+}
+
+/* Pagination styling */
+.swiper-pagination-bullet {
+  transition: all 0.3s ease;
+  background: #ec4899;
+}
+
+.swiper-pagination-bullet:hover {
+  transform: scale(1.3);
+}
+
+.swiper-pagination-bullet-active {
+  animation: pulse 1s ease-in-out infinite;
+  background: #be185d;
+}
+
+/* Enhanced card entrance animation */
+.animate-service-card {
+  animation: cardSlideIn 0.6s ease-out both;
+}
+
+/* Stagger animation for multiple visible slides */
+.swiper-slide:nth-child(1) .animate-service-card { animation-delay: 1.1s; }
+.swiper-slide:nth-child(2) .animate-service-card { animation-delay: 1.2s; }
+.swiper-slide:nth-child(3) .animate-service-card { animation-delay: 1.3s; }
+.swiper-slide:nth-child(4) .animate-service-card { animation-delay: 1.4s; }
+
+/* Icon floating animation */
+.animate-service-icon-container {
+  animation: float 4s ease-in-out infinite 2.5s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .animate-service-card:hover {
+    transform: translateY(-6px) scale(1.02);
+  }
+  
+  .animate-service-nav-button:hover {
+    transform: translateY(-1px) scale(1.05);
+  }
+}
+
+@media (max-width: 768px) {
+  .animate-service-card {
+    animation-duration: 0.4s;
+  }
+  
+  .animate-service-icon-container:hover {
+    transform: scale(1.1) rotate(5deg);
+  }
+}

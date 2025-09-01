@@ -5,7 +5,7 @@ import Evan from "../../assets/Ourteam/evan.jpg";
 
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import '../../AnimatonOurteam.css'
+import '../../AnimationCss/AnimatonOurteam.css'
 // Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
