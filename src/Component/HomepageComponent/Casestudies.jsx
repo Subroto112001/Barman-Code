@@ -1,32 +1,9 @@
 import React from "react";
-import card1 from "../../assets/Case/Case1.png";
-import card2 from "../../assets/Case/Case2.png";
-import card3 from "../../assets/Case/case3.png";
+
+import { caseholde } from "../../Helpers/Details";
 
 const Casestudies = () => {
-  const caseholde = [
-    {
-      id: 1,
-      image: card1,
-      class: "bg-[#F1F2FF]",
-      header: "Website Design for SCFC Canada",
-      para: "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
-    },
-    {
-      id: 2,
-      image: card2,
-      class: "bg-[#F0FFF7]",
-      header: "Website Design for SCFC Canada",
-      para: "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
-    },
-    {
-      id: 3,
-      image: card3,
-      class: "bg-[#FFF4F4]",
-      header: "Website Design for SCFC Canada",
-      para: "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
-    },
-  ];
+
 
   return (
     <div className="bg-[#F7F7FA]">
@@ -86,4 +63,4 @@ const Casestudies = () => {
   );
 };
 
-export default Casestudies;
+export default React.memo(Casestudies);

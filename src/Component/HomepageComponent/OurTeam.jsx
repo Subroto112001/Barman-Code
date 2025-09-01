@@ -27,7 +27,7 @@ const OurTeam = () => {
       id: 2,
       image: Ranojit,
       name: "Ranojit Kumar Mohonto",
-      designation: "CEO - Ranocode",
+      designation: "CEO - ranocoder",
     },
     {
       id: 3,
@@ -107,4 +107,4 @@ const OurTeam = () => {
   );
 };
 
-export default OurTeam;
+export default React.memo(OurTeam);

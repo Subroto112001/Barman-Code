@@ -1,38 +1,11 @@
 import React from "react";
 import { serviceIcon } from "../../Helpers/Icon";
-import { servicedetails } from "../../Helpers/Details";
+import { servicedetails, serviceitem } from "../../Helpers/Details";
 
 // Import CSS animation
 import "../../AnimationCss/service.animation.css";
 
 const Service = () => {
-  const serviceitem = [
-    {
-      id: 1,
-      icon: serviceIcon.code,
-      heading: servicedetails.heading1,
-      para: servicedetails.para1,
-    },
-    {
-      id: 2,
-      icon: serviceIcon.software,
-      heading: servicedetails.heading2,
-      para: servicedetails.para2,
-    },
-    {
-      id: 3,
-      icon: serviceIcon.mobileapp,
-      heading: servicedetails.heading3,
-      para: servicedetails.para3,
-    },
-    {
-      id: 4,
-      icon: serviceIcon.softTest,
-      heading: servicedetails.heading4,
-      para: servicedetails.para4,
-    },
-  ];
-
   return (
     <div className="container py-[70px]">
       {/* Section Title */}
@@ -62,4 +35,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default React.memo(Service);

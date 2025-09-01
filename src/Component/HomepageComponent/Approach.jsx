@@ -1,45 +1,12 @@
 import React from "react";
-import { FaCheck, FaCode } from "react-icons/fa";
-import { GiTechnoHeart } from "react-icons/gi";
-import { GrSecure, GrShieldSecurity } from "react-icons/gr";
-import { IoRocket } from "react-icons/io5";
+
 
 // Import your animation CSS file
 import "../../AnimationCss/Approachanimation.css"; // Add this import
+import { itemall } from "../../Helpers/Details";
 
 const Approach = () => {
-  const itemall = [
-    {
-      id: 1,
-      icon: <IoRocket />,
-      header: "UX Driven Engineering",
-    },
-    {
-      id: 2,
-      icon: <FaCode />,
-      header: "Developing Shared Understanding",
-    },
-    {
-      id: 3,
-      icon: <GiTechnoHeart />,
-      header: "Proven Experience and Expertise",
-    },
-    {
-      id: 4,
-      icon: <GrShieldSecurity />,
-      header: "Security & Intellectual Property (IP)",
-    },
-    {
-      id: 5,
-      icon: <FaCheck />,
-      header: "Code Reviews",
-    },
-    {
-      id: 6,
-      icon: <GrSecure />,
-      header: "Quality Assurance & Testing",
-    },
-  ];
+ 
 
   return (
     <div className="bg-[#f7f7f7] animate-approach-background">
@@ -60,7 +27,7 @@ const Approach = () => {
                 key={item.id}
                 className="w-full max-w-[604px] mx-auto lg:mx-0 bg-white px-4 sm:px-6 md:px-[34px] py-8 md:py-[60px] border-2 border-blue-300 rounded-lg flex flex-col sm:flex-row gap-4 sm:gap-[25px] animate-approach-card"
               >
-                <div className="font-[34px] bg-red-400 text-white w-[40px] h-[40px] flex items-center justify-center rounded flex-shrink-0 mx-auto sm:mx-0 animate-approach-icon-container">
+                <div className="font-[34px] gradient-background text-white w-[40px] h-[40px] flex items-center justify-center rounded flex-shrink-0 mx-auto sm:mx-0 animate-approach-icon-container">
                   <span className="animate-approach-icon">{item.icon}</span>
                 </div>
                 <div className="flex flex-col gap-[10px] text-center sm:text-left animate-approach-card-content">
@@ -82,4 +49,4 @@ const Approach = () => {
   );
 };
 
-export default Approach;
+export default React.memo(Approach);

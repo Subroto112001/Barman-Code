@@ -341,4 +341,4 @@ const Development=()=>{
     </div>
   );
 }
-export default Development
+export default React.memo(Development);
