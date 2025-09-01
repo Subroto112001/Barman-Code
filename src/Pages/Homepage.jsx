@@ -5,6 +5,7 @@ import Casestudies from "../Component/HomepageComponent/Casestudies";
 import OurTeam from "../Component/HomepageComponent/OurTeam";
 import Approach from "../Component/HomepageComponent/Approach";
 import TechStack from "../Component/HomepageComponent/TechStack";
+import Development from "../Component/HomepageComponent/Development";
 
 const Homepage = () => {
   return (
@@ -14,7 +15,8 @@ const Homepage = () => {
       <Casestudies />
       <OurTeam />
       <Approach />
-      <TechStack/>
+      <TechStack />
+      <Development/>
     </>
   );
 };
