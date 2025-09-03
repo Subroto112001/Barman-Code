@@ -8,26 +8,31 @@ const Header = () => {
   const headersItem = [
     {
       id: 1,
+      name: "Home",
+      path: "/",
+    },
+    {
+      id : 2,
       name: "About Us",
       path: "/about",
     },
     {
-      id: 2,
+      id: 3,
       name: "Service",
       path: "/service",
     },
     {
-      id: 3,
+      id: 4,
       name: "Case Studies",
       path: "/case-study",
     },
     {
-      id: 4,
+      id: 5,
       name: "Pricing",
       path: "/pricing",
     },
     {
-      id: 5,
+      id: 6,
       name: "Blog",
       path: "/blog",
     },

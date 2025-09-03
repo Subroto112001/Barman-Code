@@ -322,7 +322,7 @@ const Pricing = () => {
                   <p className="text-gray-600 text-sm mb-4 w-[80%]">
                     {service.description}
                   </p>
-                  <button className="cursor-pointer w-full bg-gray-800 hover:bg-gray-900 text-white py-2 px-4 rounded-lg font-medium transition-colors duration-200">
+                  <button className="cursor-pointer w-full  bg-primary hover:bg-blue-950 text-white py-2 px-4 rounded-lg font-medium transition-colors duration-200">
                     Learn More
                   </button>
                 </div>

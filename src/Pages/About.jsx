@@ -7,35 +7,34 @@ import {
   FaBolt,
   FaHeart,
 } from "react-icons/fa";
-
+import mark from "../assets/About/MAr.jpg";
+import suuny from "../assets/About/sunny.jpg";
+import ranojit from "../assets/Ourteam/Ranojit.jpg";
+import Subroto from "../assets/Ourteam/Ceo.JPG";
 const About = () => {
   const teamMembers = [
     {
-      name: "Alex Johnson",
+      name: "Subroto Kumar Barman",
       role: "Co-Founder & Lead Developer",
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+      image: Subroto,
       bio: "Full-stack developer with 8+ years of experience in modern web technologies.",
     },
     {
-      name: "Sarah Chen",
+      name: "Ranojit Kumar Mohonto",
       role: "Co-Founder & Design Director",
-      image:
-        "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
+      image: ranojit,
       bio: "UI/UX designer passionate about creating intuitive and beautiful user experiences.",
     },
     {
-      name: "Mike Rodriguez",
+      name: "Sunny leon",
       role: "Senior Backend Developer",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+      image: suuny,
       bio: "Backend specialist with expertise in scalable architecture and cloud solutions.",
     },
     {
-      name: "Emma Thompson",
+      name: "Mark Zuckerberg",
       role: "Frontend Developer",
-      image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
+      image: mark,
       bio: "Frontend enthusiast who loves bringing designs to life with clean, efficient code.",
     },
   ];
@@ -123,8 +122,12 @@ const About = () => {
           <div className="relative">
             <div className="bg-gradient-to-r to-[#f76680] from-[#57007b] rounded-2xl p-8 text-white transform rotate-3 hover:rotate-0 transition-transform duration-300">
               <FaCode className="w-16 h-16 mb-6 text-blue-200" />
-              <h3 className="text-2xl text-center font-bold mb-4 pr-22">{"<Barman&code/>"}</h3>
-              <p className="text-blue-100 text-end">Grow Your Business With Us</p>
+              <h3 className="text-2xl text-center font-bold mb-4 pr-22">
+                {"<Barman&code/>"}
+              </h3>
+              <p className="text-blue-100 text-end">
+                Grow Your Business With Us
+              </p>
             </div>
           </div>
         </div>
