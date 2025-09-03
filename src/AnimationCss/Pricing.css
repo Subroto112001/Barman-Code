@@ -1,0 +1,64 @@
+/* Pricing.css */
+
+/* Fade Up Animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade In */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Bounce In */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Apply Animations */
+.hero-section {
+  animation: fadeUp 0.8s ease-out;
+}
+
+.pricing-card {
+  animation: fadeUp 1s ease-out;
+  animation-fill-mode: both;
+}
+
+.pricing-card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.service-card {
+  animation: fadeIn 1s ease-out;
+  animation-fill-mode: both;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-section {
+  animation: bounceIn 0.6s ease-out;
+}

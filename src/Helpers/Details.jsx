@@ -114,27 +114,29 @@ export const ourTechStuckbackend = [
   },
 ];
 // case
+
+
 export const caseholde = [
   {
     id: 1,
     image: card1,
     class: "bg-[#F1F2FF]",
-    header: "Website Design for SCFC Canada",
-    para: "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
+    header: "Website Design for Ecommerce Marketplace",
+    para: `Recently We developed a fully functional E-commerce website with a modern and responsive design.`,
   },
   {
     id: 2,
     image: card2,
     class: "bg-[#F0FFF7]",
     header: "Website Design for SCFC Canada",
-    para: "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
+    para: "Recently We developed a fully functional E-commerce website with a modern and responsive design.",
   },
   {
     id: 3,
     image: card3,
     class: "bg-[#FFF4F4]",
-    header: "Website Design for SCFC Canada",
-    para: "Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.",
+    header: "Portfolio Website Design ",
+    para: "July 2025 Our omega team created a personal portfolio website to showcase my projects, skills, and experience",
   },
 ];
 
@@ -197,3 +199,5 @@ export  const serviceitem = [
     para: servicedetails.para4,
   },
 ];
+
+

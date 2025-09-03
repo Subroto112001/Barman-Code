@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../../assets/Logo.png";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,23 +9,29 @@ const Header = () => {
     {
       id: 1,
       name: "About Us",
+      path: "/about",
     },
     {
       id: 2,
       name: "Service",
+      path: "/service",
     },
     {
       id: 3,
       name: "Case Studies",
+      path: "/case-study",
     },
     {
       id: 4,
-      name: "Blog",
+      name: "Pricing",
+      path: "/pricing",
     },
     {
       id: 5,
-      name: "How It Works",
+      name: "Blog",
+      path: "/blog",
     },
+   
   ];
 
   const toggleMenu = () => {
@@ -35,19 +42,20 @@ const Header = () => {
     <div className="container shadow-md">
       <div className="flex py-3 md:py-5 flex-row items-center justify-between relative">
         {/* Logo */}
-        <div className="text-primary default-lg font-bold z-20">
+        <NavLink to={"/"} className="text-primary default-lg font-bold z-20">
           {"</Barman&Code>"}
-        </div>
+        </NavLink>
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex gap-6 xl:gap-[48px] cursor-pointer">
           {headersItem.map((item) => (
-            <span
+            <NavLink
+              to={item.path}
               key={item.id}
               className="Headings-h6 text-gray-700 hover:text-primary transition-colors"
             >
               {item.name}
-            </span>
+            </NavLink>
           ))}
         </div>
 

@@ -13,7 +13,7 @@ const Casestudies = () => {
           <div className="flex flex-col items-center justify-center">
             <div className="w-[60px] sm:w-[75px] md:w-[89px] h-[4px] rounded gradient-backgroundtwo mb-[20px]"></div>
             <h3 className="lite-h2 text-center">Our recent</h3>
-            <h3 className="headings-h2 text-center">Case studies</h3>
+            <h3 className="headings-h2 text-center">Project</h3>
           </div>
 
           {/* Case Studies Grid */}
@@ -45,11 +45,16 @@ const Casestudies = () => {
                     <p className="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
                       {item.para}
                     </p>
+                    <div className=" flex flex-col gap-1">
+                      <h1 className="font-semibold text-[18px]">
+                        Tech Stack: React.js, Tailwind CSS
+                      </h1>
+                    </div>
 
                     {/* Optional: Add a "Read More" button */}
                     <div className="mt-4 lg:mt-6">
-                      <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 md:px-8 md:py-3 rounded-lg font-medium hover:scale-105 transition-transform duration-300 text-sm md:text-base">
-                        Read More
+                      <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 md:px-8 md:py-3 rounded-lg font-medium hover:scale-105 transition-transform duration-300 text-sm md:text-base cursor-pointer">
+                        See More
                       </button>
                     </div>
                   </div>
