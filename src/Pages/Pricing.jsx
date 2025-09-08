@@ -20,7 +20,7 @@ const Pricing = () => {
       name: "Starter",
       icon: <FaRocket className="w-8 h-8" />,
       description: "Perfect for small businesses and startups",
-      monthlyPrice: 999,
+      monthlyPrice: 399,
       yearlyPrice: 899,
       popular: false,
       color: "blue",
@@ -45,7 +45,7 @@ const Pricing = () => {
       name: "Professional",
       icon: <FaStar className="w-8 h-8" />,
       description: "Ideal for growing businesses",
-      monthlyPrice: 1999,
+      monthlyPrice: 999,
       yearlyPrice: 1799,
       popular: true,
       color: "purple",
@@ -173,7 +173,7 @@ const Pricing = () => {
 
               {/* Monthly button */}
               <button
-                className={`relative z-10 w-1/2 px-4 sm:px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
+                className={`cursor-pointer relative z-10 w-1/2 px-4 sm:px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
                   billingType === "monthly"
                     ? "text-blue-600"
                     : "text-white hover:text-blue-100"
@@ -185,7 +185,7 @@ const Pricing = () => {
 
               {/* Yearly button */}
               <button
-                className={`relative z-10 w-1/2 px-4 sm:px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
+                className={`cursor-pointer relative z-10 w-1/2 px-4 sm:px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
                   billingType === "yearly"
                     ? "text-blue-600"
                     : "text-white hover:text-blue-100"
@@ -251,7 +251,7 @@ const Pricing = () => {
                 </div>
 
                 <button
-                  className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 ${getButtonClasses(
+                  className={`w-full py-3 px-6 rounded-lg font-semibold cursor-pointer transition-all duration-200 transform hover:scale-105 ${getButtonClasses(
                     plan.color
                   )}`}
                 >

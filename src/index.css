@@ -170,15 +170,29 @@ a {
 
 
 
-
-
-
-
 .container {
   margin: 0 auto;
   padding-left: 104px;
   padding-right: 104px;
 }
+
+@media (max-width: 768px) {
+  .container {
+    margin:  auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    margin:  auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
 
 .menu-items {
   font-family: "Inter", sans-serif;
