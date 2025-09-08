@@ -8,14 +8,14 @@ const Banner = () => {
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-8 lg:gap-4">
           {/* Content Section */}
           <div className="flex flex-col gap-4 md:gap-6 lg:gap-7 order-2 lg:order-1">
-            <h1 className="lite-h1 max-w-full lg:max-w-[520px] text-center lg:text-left">
+            <h1 className="lite-h1 max-w-full lg:max-w-[520px] text-center lg:text-left ">
               <span className="lite-h1 text-gray-900">Great</span>{" "}
-              <span className="lite-h1 gradient-second-text">
-                web & software
-              </span>{" "}
-              is &nbsp;
-              <span className="Dilplay-h1-bold text-gray-900">
-                built by great &nbsp;
+              <span className="lite-h1-small md:lite-h1 gradient-second-text ">
+                web & software is
+              </span>
+             
+              <span className=" Dilplay-h1-bold-small md:Dilplay-h1-bold text-gray-900">
+                built by great 
               </span>
               <span className="Dilplay-h1-bold gradient-second-text">
                 {" "}

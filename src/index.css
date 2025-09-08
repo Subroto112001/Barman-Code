@@ -291,6 +291,13 @@ a {
   font-size: 45px;
   line-height: 71px;
 }
+/* for small device */
+.lite-h1-small {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 45px;
+}
+/* for small device */
 .lite-h2 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -324,6 +331,16 @@ a {
   font-size: 53px;
   line-height: 71px;
 }
+/* for small device */
+.Dilplay-h1-bold-small {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  
+}
+/* for small device */
+
+
 .Footer-sm {
   font-family: "Inter", sans-serif;
   font-size: 14px;
